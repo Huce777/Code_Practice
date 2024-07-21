@@ -201,3 +201,48 @@
    ```
 
 这些循环结构是Python编程中非常重要的组成部分，它们允许你重复执行代码块，直到满足特定条件。
+
+
+
+在Python中，获取列表或元组中的最大值可以通过内置函数`max()`来实现。以下是一些示例：
+
+##### *获取列表中的最大值*
+
+```python
+numbers = [1, 2, 3, 4, 5]
+max_value = max(numbers)
+print("最大值是:", max_value)
+```
+
+##### *获取元组中的最大值*
+
+```python
+numbers = (1, 2, 3, 4, 5)
+max_value = max(numbers)
+print("最大值是:", max_value)
+```
+
+##### *使用`max()`函数获取多个参数的最大值*
+
+```python
+max_value = max(1, 2, 3, 4, 5)
+print("最大值是:", max_value)
+```
+
+##### *获取字典中的最大值（基于字典的值）*
+
+```python
+data = {'a': 1, 'b': 5, 'c': 3}
+max_value = max(data, key=data.get)
+print("字典中的最大值对应的键是:", max_value)
+```
+
+##### *获取字典中的最大值（基于字典的键）*
+
+```python
+data = {'a': 3, 'b': 1, 'c': 5}
+max_value = max(data)
+print("字典中最大键对应的值是:", data[max_value])
+```
+
+`max()`函数非常灵活，可以根据需要选择不同的参数和关键字参数来获取最大值。
